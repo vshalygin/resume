@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Resume: Build Russian PDF",
+            "type": "process",
+            "command": "typst",
+            "args": [
+                "compile",
+                "src/resume-viacheslav-shalygin-ru.typ",
+                "resume-viacheslav-shalygin-ru.pdf"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Resume: Build English PDF",
+            "type": "process",
+            "command": "typst",
+            "args": [
+                "compile",
+                "src/resume-viacheslav-shalygin-en.typ",
+                "resume-viacheslav-shalygin-en.pdf"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Resume: Build all PDFs",
+            "dependsOn": [
+                "Resume: Build Russian PDF",
+                "Resume: Build English PDF"
+            ],
+            "dependsOrder": "parallel",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

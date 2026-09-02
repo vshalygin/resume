@@ -1,0 +1,21 @@
+{
+    "[typst]": {
+        "editor.formatOnSave": true
+    },
+    "tinymist.exportPdf": "never",
+    "tinymist.outputPath": "$root/$name",
+
+    "files.exclude": {
+        "*.pdf": true
+    },
+
+    "search.exclude": {
+        "*.pdf": true
+    },
+
+    "files.watcherExclude": {
+        "*.pdf": true
+    },
+
+    "files.encoding": "utf8"
+}
