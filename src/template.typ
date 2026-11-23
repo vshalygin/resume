@@ -3,7 +3,7 @@
 #let muted = rgb("#5f6872")
 
 // Vertical rhythm: lines < paragraphs < sections.
-#let line_spacing = 3pt
+#let line_spacing = 5.5pt
 #let paragraph_spacing = 6pt
 #let section_spacing = 12pt
 
